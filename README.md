@@ -1,23 +1,42 @@
-# EUDI Android Wallet reference application
 
-:heavy_exclamation_mark: **Important!** Before you proceed, please read
-the [EUDI Wallet Reference Implementation project description](https://github.com/eu-digital-identity-wallet/.github/blob/main/profile/reference-implementation.md)
+
+# EUDI-Compatible Sports Wallet - Android App
+
+This project is a proof of concept to show the feasibility of applying EUDI Wallet standards to the decentralized nature of credentials in regulated sports. This project was developed under the scope of [W3C OpenAthletics Community Group](https://www.w3.org/community/opentrack/) and motivated by the outcomes of [AthTech'25](https://athtech.run/2025). The implementation is an adaptation of the [official EUDI Android Wallet reference app](https://github.com/eu-digital-identity-wallet/).
+
+In this project you can find new document definitions required to implement the main [use cases and scenarios for sports credentials](https://www.w3.org/community/opentrack/2026/04/03/use-cases-of-decentralized-sports-credentials/).    
+
+
+![Screenshot of the app, with three sports credentials and one PID](./sports-wallet-android.png)
+
+## Related repositories
+
+If you want to test or reuse this project, just use the existing servers deployed or get all the software components in the following repositories:
+
+* WALLET NATIVE APP
+  * Wallet for Android: https://github.com/espinr/eudi-app-android
+  * Backend for the Wallet: https://github.com/espinr/eudi-srv-wallet-provider
+
+* VERIFIER (PROXIMITY)
+  * Verifier for Android (Based on Multipaz): https://github.com/espinr/eudi-app-multiplatform
+
+* ISSUANCE SERVICE:
+  * Status list server (checking/revocation of credentials): https://github.com/espinr/eudi-srv-statuslist-py
+  * OIDC server: https://github.com/espinr/eudi-srv-issuer-oidc-py
+  * APIs for the backend: https://github.com/espinr/eudi-srv-web-issuing-eudiw-py
+  * Frontend: https://github.com/espinr/eudi-srv-web-issuing-frontend-eudiw-py
+
+* ONLINE VERIFICATION SERVICE:
+  * Backend APIs: https://github.com/espinr/eudi-srv-web-verifier-endpoint
+  * Frontend: https://github.com/espinr/eudi-web-verifier
+
+The issuance and verification services can be deployed easily using Docker Compose. 
 
 ----
 
-## Table of contents
+:heavy_exclamation_mark: **Important!** For more information about the base of the original project, please read the [EUDI Wallet Reference Implementation project description](https://github.com/eu-digital-identity-wallet/.github/blob/main/profile/reference-implementation.md)
 
-* [Overview](#overview)
-* [Important things to know](#important-things-to-know)
-* [How to use the application](#how-to-use-the-application)
-* [How to build - Quick start guide](#how-to-build---quick-start-guide)
-* [Application configuration](#application-configuration)
-* [Demo videos](#demo-videos)
-* [Disclaimer](#disclaimer)
-* [How to contribute](#how-to-contribute)
-* [License](#license)
-
-## Overview
+## About the EUDI Android Wallet reference app
 
 The EUDI Wallet Reference Implementation is built based on the [Architecture Reference Framework](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/main/docs/architecture-and-reference-framework-main.md) and aims to showcase a robust and interoperable platform for digital identification, authentication, and electronic signatures based on common standards across the European Union.
 The EUDI Wallet Reference Implementation is based on a modular architecture composed of business-agnostic, reusable components that will evolve in incremental steps and can be reused across multiple projects.
@@ -31,7 +50,7 @@ The EUDI Wallet Reference Implementation is the application that allows users to
 
 The EUDIW project provides, through this repository, an Android app. Please refer to the repositories listed in the following sections for more detailed information on how to get started, contribute, and engage with the EUDI Wallet Reference Implementation.
  
-# 💡 Specifications Employed
+## 💡 Specifications Employed
 
 The app consumes the SDK called EUDIW Wallet core [Wallet core](https://github.com/eu-digital-identity-wallet/eudi-lib-android-wallet-core) and a list of available libraries to facilitate remote presentation, proximity, and issuing test/demo functionality following the specification of the [ARF](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework), including:
  
