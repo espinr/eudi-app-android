@@ -246,20 +246,6 @@ graph TD;
   business-logic --> authentication-logic
 ```
 
-## Demo videos
-
-Issuance
-
-[Issuance](https://github.com/user-attachments/assets/eeecc356-8b96-4c86-8347-7a9dd5e5251d)
-
-Presentation
-
-[Presentation](https://github.com/user-attachments/assets/2ffc230f-f3fd-4efb-95aa-5a536a3f86ac)
-
-Proximity
-
-[Proximity](https://github.com/user-attachments/assets/63da7498-1b83-4949-a058-ab086584d1c8)
-
 ## Disclaimer
 
 The released software is an initial development release version: 
