@@ -14,7 +14,7 @@ In this project you can find new document definitions required to implement the 
 If you want to test or reuse this project, just use the existing servers deployed or get all the software components in the following repositories:
 
 * WALLET NATIVE APP
-  * Wallet for Android: https://github.com/espinr/eudi-app-android
+  * Wallet for Android (this repo): https://github.com/espinr/eudi-app-android  
   * Backend for the Wallet: https://github.com/espinr/eudi-srv-wallet-provider
 
 * VERIFIER (PROXIMITY)
